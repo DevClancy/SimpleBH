@@ -1,5 +1,10 @@
-import time
 import os
+
+# я даун
+
+os.system("title SimpleBH By DevClancy")
+
+import time
 from threading import Thread
 import pymem
 from pymem import process
@@ -18,7 +23,6 @@ dwForceJump = int( response["signatures"]["dwForceJump"] )
 dwLocalPlayer = int( response["signatures"]["dwLocalPlayer"] )
 m_fFlags = int( response["netvars"]["m_fFlags"] )
 
-
 def bhop():
 	try:
 		pm = pymem.Pymem("csgo.exe")
@@ -27,7 +31,7 @@ def bhop():
 
 		os.system("cls")
 
-		print(Fore.CYAN + "Author: Clancy \nYouTube: https://www.youtube.com/c/ClancyCheats \n\nDonate: \nQIWI: DEVCLANCY \nDonationAlerts: https://www.donationalerts.com/r/theclancy")
+		print(Fore.CYAN + "Author: DevClancy \nYouTube: https://www.youtube.com/c/ClancyCheats \n\nDonate: \nQIWI: DEVCLANCY \nDonationAlerts: https://www.donationalerts.com/r/theclancy")
 
 		while True:
 			player = pm.read_int(client + dwLocalPlayer)
