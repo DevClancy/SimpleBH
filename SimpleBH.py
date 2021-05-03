@@ -27,7 +27,7 @@ def bhop():
 
 		os.system("cls")
 
-		print(Fore.CAYN + "Author: Clancy \nYouTube: https://www.youtube.com/c/ClancyCheats \nDonate: QIWI: DEVCLANCY \nDonationAlerts: https://www.donationalerts.com/r/theclancy")
+		print(Fore.CYAN + "Author: Clancy \nYouTube: https://www.youtube.com/c/ClancyCheats \n\nDonate: \nQIWI: DEVCLANCY \nDonationAlerts: https://www.donationalerts.com/r/theclancy")
 
 		while True:
 			player = pm.read_int(client + dwLocalPlayer)
@@ -36,9 +36,8 @@ def bhop():
 				on_ground = pm.read_int( player + m_fFlags )
 				if player and on_ground == 257 or on_ground == 263:
 					pm.write_int( force_jump, 6 )
-	except:
-		print("[SimpleBH] Откройте CSGO!")
-		time.sleep(0.3)
+	except Exception as E:
+		print("[SimpleBH] Произошла ошибка!")
 
 
 main = Thread(target = bhop)
