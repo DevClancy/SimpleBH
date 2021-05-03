@@ -6,6 +6,7 @@ from pymem import process
 import pymem.process
 import requests
 import keyboard
+from colorama import init
 from colorama import Fore
 
 init()
