@@ -1,2 +1,2 @@
 # SimpleBH
-External BunnyHope for CSGO.
+External BunnyHop for CSGO.
