@@ -16,7 +16,7 @@ from colorama import Fore
 
 init()
 
-offsets = 'https://raw.githubusercontent.com/kadeeq/ProjectX/main/offsets/offsets.json'
+offsets = 'https://raw.githubusercontent.com/frk1/hazedumper/master/csgo.json'
 response = requests.get( offsets ).json()
 
 dwForceJump = int( response["signatures"]["dwForceJump"] )
